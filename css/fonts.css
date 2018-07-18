@@ -1,0 +1,6 @@
+.ft_roboto, .ft_roboto_l, .ft_roboto_b{
+  font-family: 'Roboto Condensed', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+.ft_roboto_l{ font-weight: 300; }.ft_roboto_b{ font-weight: 700; }
