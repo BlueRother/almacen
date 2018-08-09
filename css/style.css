@@ -1,16 +1,16 @@
-:root{
-  --primarycolor:  #29313E;
+:root {
+  --primarycolor: #4e2408;
   --secundarycolor: #FDFDFD;
-  --listcolor:#6d7985;
+  --listcolor: #974d12;
 }
 
-body{
+body {
   display: grid;
-  grid-template-columns: repeat(12,1fr);
+  grid-template-columns: repeat(12, 1fr);
   grid-template-rows: 100px 24em 1fr 1fr;
 }
 
-.main-header{
+.main-header {
   display: grid;
   background-color: var(--primarycolor);
   text-align: center;
@@ -18,77 +18,77 @@ body{
   grid-column: 1 / span 12;
 }
 
-.logo img{
+.logo img {
   width: 48px;
   height: 48px;
 }
 
-.menu-content{
+.menu-content {
+
   background-color: var(--primarycolor);
   text-align: left;
   width: 100%;
-  transform: scale(1,0);
+  transform: scale(1, 0);
   transform-origin: top;
   transition: transform 400ms ease-in-out;
 }
 
-.list{
+.list {
   margin-bottom: 1em;
   margin-left: 1em;
 }
 
-.list:last-child{
+.list:last-child {
   margin-bottom: 0;
 }
 
-.list a{
+.list a {
   color: var(--listcolor);
   text-decoration: none;
 }
 
-.list a:hover{
+.list a:hover {
   color: var(--secundarycolor);
   border-bottom: 2px solid;
 }
 
-.search{
+.search {
   background-color: var(--primarycolor);
   width: 100%;
   border: none;
 }
 
-.search:focus{
+.search:focus {
   outline: none;
 }
 
-.nav-toggle{
+.nav-toggle {
   display: none;
 }
 
-.nav-toggle-label{
+.nav-toggle-label {
   display: inline-grid;
   width: 28px;
   height: 30px;
 }
 
-.nav-toggle-label span:after,
-.nav-toggle-label span:before {
+.nav-toggle-label span:after, .nav-toggle-label span:before {
   content: "";
   position: absolute;
   left: 0;
   top: -9px;
 }
-.nav-toggle-label span:after{
+
+.nav-toggle-label span:after {
   top: 9px;
 }
+
 .nav-toggle-label span {
   position: relative;
   display: block;
 }
 
-.nav-toggle-label span,
-.nav-toggle-label span:after,
-.nav-toggle-label span:before{
+.nav-toggle-label span, .nav-toggle-label span:after, .nav-toggle-label span:before {
   width: 28px;
   height: 5px;
   background-color: var(--secundarycolor);
@@ -97,49 +97,45 @@ body{
   border-radius: 2px;
 }
 
-main{
+main {
   grid-column: 1 / span 12;
 }
 
-.magazine-principal{
+.magazine-principal {
   display: grid;
+  /* background-image: url(/img/books.jpeg); */
   background-color: var(--primarycolor);
   grid-template-columns: repeat(20, 1fr);
-  grid-template-rows: 5em auto auto 1em; /* hace el salto de glith corregir */
+  grid-template-rows: 5em auto auto 1em;
+  /* hace el salto de glith corregir */
 }
 
 @media screen and (min-width: 1000px) {
-
-  .nav-toggle-label{
+  .nav-toggle-label {
     display: none;
   }
-
-  .main-header{
+  .main-header {
     padding-top: 30px;
     display: grid;
     grid-template-columns: repeat(20, 1fr);
   }
-
-  .logo{
+  .logo {
     grid-column: 2 / span 1;
     width: 100%;
   }
-
-  .menu-content{
+  .menu-content {
     all: unset;
     grid-column: 3 / span 6;
     display: flex;
-    justify-content:flex-start;
+    justify-content: flex-start;
     align-items: center;
   }
-
-  .menu-toggle{
+  .menu-toggle {
     display: flex;
     justify-content: center;
-    grid-column:  19 / span 1;
+    grid-column: 19 / span 1;
   }
-
-  .search{
+  .search {
     font-size: 1.1rem;
     color: var(--secundarycolor);
     grid-column: 14/ span 4;
@@ -147,19 +143,15 @@ main{
     height: 50%;
     margin-top: 4%;
   }
-
-  .search:focus{
+  .search:focus {
     border-bottom: 1px solid;
     transition: 250ms;
   }
-
-
-  .nav-bar{
+  .nav-bar {
     grid-column: 2 / span 1;
     grid-row: 2 / span 1;
   }
-
-  .principal-account{
+  .principal-account {
     color: var(--listcolor);
     display: grid;
     grid-column: 2 / span 1;
@@ -168,37 +160,31 @@ main{
     text-align: center;
     align-items: center;
   }
-
-  .principal{
+  .principal {
     color: var(--secundarycolor);
     grid-column: 3 / span 6;
     grid-row: 2/ span 1;
   }
-
-  .principal h2{
-    font-size: 4.5em;
+  .principal h2 {
+    font-size: 3em;
     margin-bottom: 10px;
   }
-
-  .principal h4{
-    color:var(--listcolor);
+  .principal h4 {
+    color: var(--listcolor);
   }
-
-  .principal hr{
-    color:var(--listcolor);
+  .principal hr {
+    color: var(--listcolor);
     background-color: var(--listcolor);
     border: none;
     width: 9%;
     height: 3px;
     display: inline-flex;
   }
-
-  .principal a{
+  .principal a {
     color: var(--listcolor);
     border: none:
   }
-
-  .number-magazine{
+  .number-magazine {
     color: var(--listcolor);
     display: grid;
     grid-column: 12/ span 1;
@@ -207,8 +193,7 @@ main{
     text-align: center;
     align-items: center;
   }
-
-  .phrase{
+  .phrase {
     color: var(--listcolor);
     display: grid;
     grid-column: 12/ span 1;
@@ -217,16 +202,13 @@ main{
     text-align: center;
     align-items: center;
   }
-
-  .cover-main{
+  .cover-main {
     grid-column: 13/ span 6;
     grid-row: 1/ span 4;
     width: 100%;
   }
-
-  .social-media{
+  .social-media {
     grid-column: 15/ span 2;
     grid-row: 3/ span 1
   }
-
 }
